@@ -6,7 +6,7 @@ return [
             'zoop/commerce/api' => [
                 'type' => 'Hostname',
                 'options' => [
-                    'route' => 'api.zoopcommerce.local'
+                    'route' => 'api.zoopcommerce.com'
                 ],
             ],
         ]
@@ -15,9 +15,9 @@ return [
         'odm' => [
             'connection' => [
                 'commerce' => [
-                    'dbname' => 'zoop_development',
-                    'server' => 'localhost',
-                    'port' => '27017',
+                    'dbname' => '',
+                    'server' => '',
+                    'port' => '',
                     'user' => '',
                     'password' => '',
                 ],
@@ -25,7 +25,7 @@ return [
             'configuration' => [
                 'commerce' => [
                     'metadata_cache' => 'doctrine.cache.array',
-                    'default_db' => 'zoop_development',
+                    'default_db' => '',
                     'generate_proxies' => true,
                     'proxy_dir' => __DIR__ . '/../../data/proxies',
                     'proxy_namespace' => 'proxies',
@@ -38,30 +38,30 @@ return [
     ],
     'zoop' => [
         'aws' => [
-            'key' => 'AKIAJE2QFIBMYF5V5MUQ',
-            'secret' => '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',
+            'key' => '',
+            'secret' => '+FIaYp',
             's3' => [
                 'buckets' => [
-                    'test' => 'zoop-web-assets-test',
+                    'test' => 'zoop-web-assets',
                 ],
                 'endpoint' => [
-                    'test' => 'https://zoop-web-assets-test.s3.amazonaws.com',
+                    'test' => 'https://zoop-web-assets.s3.amazonaws.com',
                 ],
             ],
         ],
         'db' => [
-            'host' => 'localhost',
-            'database' => 'zoop_development',
-            'username' => 'root',
-            'password' => 'reverse',
+            'host' => '',
+            'database' => '',
+            'username' => '',
+            'password' => '',
             'port' => 3306,
         ],
         'cache' => [
             'handler' => 'mongodb',
             'mongodb' => [
-                'host' => 'localhost',
-                'database' => 'zoop_development',
-                'collection' => 'Cache',
+                'host' => '',
+                'database' => '',
+                'collection' => '',
                 'username' => '',
                 'password' => '',
                 'port' => 27017,
@@ -74,13 +74,25 @@ return [
         'session' => [
             'handler' => 'mongodb',
             'mongodb' => [
-                'host' => 'localhost',
-                'database' => 'zoop_development',
-                'collection' => 'Session',
+                'host' => '',
+                'database' => '',
+                'collection' => '',
                 'username' => '',
                 'password' => '',
                 'port' => 27017,
             ]
+        ],
+        'theme' => [
+            'creator' => [
+                'lint' => true,
+                'parse' => [
+                    'theme' => true,
+                    'content' => false,
+                    'assets' => false,
+                ]
+            ],
+            'temp_dir' => __DIR__ . '/../../data/temp',
+            'max_file_upload_size' => (1024 * 1024 * 20), // 20MB
         ],
     ]
 ];
