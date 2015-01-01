@@ -2169,12 +2169,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:zoopcommerce/commerce-theme-module.git",
-                "reference": "69c05de898a7b9549bdf62e5fea96aa1e9a8b8c5"
+                "reference": "c491b975174020ffa1818c2cffc06513eab7a125"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zoopcommerce/commerce-theme-module/zipball/69c05de898a7b9549bdf62e5fea96aa1e9a8b8c5",
-                "reference": "69c05de898a7b9549bdf62e5fea96aa1e9a8b8c5",
+                "url": "https://api.github.com/repos/zoopcommerce/commerce-theme-module/zipball/c491b975174020ffa1818c2cffc06513eab7a125",
+                "reference": "c491b975174020ffa1818c2cffc06513eab7a125",
                 "shasum": ""
             },
             "require": {
@@ -2197,6 +2197,7 @@
                 "zoopcommerce/commerce-public-apis-module": "dev-master",
                 "zoopcommerce/commerce-public-data-models-module": "dev-master",
                 "zoopcommerce/gateway-module": "~2.0",
+                "zoopcommerce/maggott-module": "dev-master#b3d3aa8dfca28f580f4cdaa7312a4e3261b243ab as 1.1.1",
                 "zoopcommerce/shard-module": "~4.0"
             },
             "require-dev": {
@@ -2205,7 +2206,7 @@
                 "squizlabs/php_codesniffer": "1.4.*",
                 "zoopcommerce/commerce-api-module": "dev-master",
                 "zoopcommerce/commerce-common-module": "dev-master",
-                "zoopcommerce/commerce-store-module": "dev-master",
+                "zoopcommerce/commerce-entity-module": "dev-master",
                 "zoopcommerce/commerce-test-data-module": "dev-master",
                 "zoopcommerce/commerce-user-module": "dev-master"
             },
@@ -2240,7 +2241,7 @@
                 "source": "https://github.com/zoopcommerce/commerce-theme-module/tree/master",
                 "issues": "https://github.com/zoopcommerce/commerce-theme-module/issues"
             },
-            "time": "2014-12-13 04:56:08"
+            "time": "2015-01-01 08:06:05"
         },
         {
             "name": "zoopcommerce/commerce-user-module",
